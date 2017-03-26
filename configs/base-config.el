@@ -34,5 +34,6 @@
 (electric-pair-mode t)
 
 
+
 (provide 'base-config)
 

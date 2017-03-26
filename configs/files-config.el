@@ -59,5 +59,8 @@
   :config
   (require 'ztree-diff)
   (require 'ztree-dir))
-
+(use-package vlf
+  :config
+  (require 'vlf)
+  (setq vlf-application 'dont-ask))
 (provide 'files-config)
