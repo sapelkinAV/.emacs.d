@@ -12,7 +12,11 @@
 (require 'helm-configuration)
 (require 'my-aliaces)
 (require 'base-config)
-
+(require 'faces-config)
+(require 'editing-config)
+(require 'convinience-config)
+(require 'development-config)
+(require 'files-config)
 ;;global unsets
 (global-unset-key (kbd "C-z"))
 
@@ -25,7 +29,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (my-aliaces helm-config magit))))
+ '(package-selected-packages
+   (quote
+    (ztree recentf-ext dired+ dired-x projectile expand-region yasnippet undo-tree clean-aindent-mode smartparens volatile-highlights duplicate-thing workgroups2 spacemacs-theme color-theme company my-aliaces helm-config magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

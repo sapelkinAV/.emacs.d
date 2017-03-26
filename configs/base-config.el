@@ -30,6 +30,8 @@
 ;;smart indentation
 (use-package smart-mode-line)
 
+;;electric pair
+(electric-pair-mode t)
 
 
 (provide 'base-config)

@@ -13,7 +13,10 @@
           helm-M-x-requires-pattern nil
           helm-ff-skip-boring-files t)
     (helm-mode))
-  :bind (("C-c h" . helm-mini)
+  (global-set-key (kbd "C-c h") 'helm-command-prefix)
+  :bind (
+	 ("C-x b" . helm-mini)
+	 ("C-x C-f" . helm-find-files)
          ("C-h a" . helm-apropos)
          ("C-x C-b" . helm-buffers-list)
          ("C-x b" . helm-buffers-list)
@@ -23,7 +26,6 @@
          ("C-x c s" . helm-swoop)
          ("C-x c y" . helm-yas-complete)
          ("C-x c Y" . helm-yas-create-snippet-on-region)
-         ("C-x c b" . my/helm-do-grep-book-notes)
          ("C-x c SPC" . helm-all-mark-rings)))
 
 (provide 'helm-configuration)
