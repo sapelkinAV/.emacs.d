@@ -7,7 +7,7 @@
 
 
 ;;linum
-(linum-mode t)
+(global-linum-mode t)
 
 (use-package duplicate-thing
   :bind

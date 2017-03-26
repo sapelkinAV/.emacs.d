@@ -91,7 +91,7 @@
   ("C-x g c" . magit-branch)
   ("C-x g s" . magit-status)
   ("C-x g r" . magit-reflog)
-  ("C-x g t" . magit-tag)
+  
 
   )
 
