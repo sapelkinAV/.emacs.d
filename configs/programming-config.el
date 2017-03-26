@@ -73,7 +73,7 @@
 
 (use-package magit
   :init
-  ;;(set-default 'magit-stage-all-confirm nil)
+  (set-default 'magit-stage-all-confirm nil)
   (add-hook 'magit-mode-hook 'magit-load-config-extensions)
   :config
   (require 'magit)
@@ -84,15 +84,14 @@
     (delete-other-windows))
   (global-unset-key (kbd "C-x g"))
   :bind
-  ("C-x g h" . magit-log)
+ ( ("C-x g h" . magit-log)
   ("C-x g f" . magit-file-log)
   ("C-x g b" . magit-blame-mode)
   ("C-x g m" . magit-branch-manager)
   ("C-x g c" . magit-branch)
   ("C-x g s" . magit-status)
   ("C-x g r" . magit-reflog)
-  
-
+  )
   )
 
 (use-package flycheck
