@@ -2,9 +2,12 @@
   :init
   (progn
     (global-company-mode 1)
-    
     )
   )
+
+
+;;linum
+(linum-mode t)
 
 (use-package duplicate-thing
   :bind

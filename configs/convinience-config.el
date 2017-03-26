@@ -36,8 +36,6 @@
 ;; GROUP: Convenience -> HL Line
 (global-hl-line-mode)
 
-;; GROUP: Convenience -> Linum
-(add-hook 'prog-mode-hook 'linum-mode) ;; enable linum only in programming modes
 
 ;; GROUP: Convenience -> Whitespace
 

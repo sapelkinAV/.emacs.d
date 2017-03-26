@@ -67,6 +67,10 @@
   (add-hook 'dired-mode-hook 'diff-hl-dired-mode))
 
 
+
+
+;;MAGIT
+
 (use-package magit
   :init
   (set-default 'magit-stage-all-confirm nil)
@@ -90,4 +94,9 @@
   ("C-x g t" . magit-tag)
 
   )
-(provide programming-config)
+
+(use-package flycheck
+  :config
+  (require 'flycheck)
+  (add-hook 'after-init-hook #'global-flycheck-mode))
+(provide 'programming-config)

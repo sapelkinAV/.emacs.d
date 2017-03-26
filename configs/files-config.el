@@ -53,7 +53,10 @@
 
 (use-package dired+
   :config
-  (require 'dired+))
+  (require 'dired+)
+  (add-hook 'dired-mode-hook (lambda()
+                               (dired-hide-details-mode -1)))
+  )
 
 (use-package ztree
   :config
