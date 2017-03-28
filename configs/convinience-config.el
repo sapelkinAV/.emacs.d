@@ -13,7 +13,6 @@
 
 ;; update any change made on file to the current buffer
 (global-auto-revert-mode)
-
 ;; GROUP: Convenience -> Hippe Expand
 ;; hippie-expand is a better version of dabbrev-expand.
 ;; While dabbrev-expand searches for words you already types, in current;; buffers and other buffers, hippie-expand includes more sources,
@@ -36,6 +35,8 @@
 ;; GROUP: Convenience -> HL Line
 (global-hl-line-mode)
 
+;; GROUP: Convenience -> Ibuffer
+(setq ibuffer-use-other-window t) ;; always display ibuffer in another window
 
 ;; GROUP: Convenience -> Whitespace
 
@@ -49,4 +50,7 @@
 
 ;; easier window navigation
 (windmove-default-keybindings)
+
+
+
 (provide 'convinience-config)
