@@ -40,3 +40,12 @@
   (require 'vlf)
   (setq vlf-application 'dont-ask))
 (provide 'files-config)
+
+
+
+(use-package dired-k
+  :config
+  (require 'dired-k)
+  :bind
+  (:map dired-mode-map
+	("K" . dired-k)))
