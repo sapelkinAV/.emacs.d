@@ -29,7 +29,7 @@
          ("C-x c SPC" . helm-all-mark-rings))
   :config
   (helm-mode)
-
+  (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
   )
 
 

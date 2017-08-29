@@ -18,11 +18,6 @@
         search-ring
         regexp-search-ring))
 
-;; winner-mode lets you use C-c <left> and C-c <right>
-;; to switch between window configurations. This is handy when something has
-;; popped up a buffer that you want to look at briefly before returning to whatever you were working on. When you're done, press C-c <left>.
-(use-package winner
-  :defer t)
 
 ;;tool bar
 (tool-bar-mode -1)
@@ -36,4 +31,3 @@
 
 
 (provide 'base-config)
-

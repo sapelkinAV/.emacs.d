@@ -21,7 +21,10 @@
 ;; Start garbage collection every 100MB to improve Emacs performance
 (setq gc-cons-threshold 100000000)
 
-
+(use-package magit
+  :init
+  (global-set-key (kbd "C-x g") 'magit-status)
+ )
 
 
 

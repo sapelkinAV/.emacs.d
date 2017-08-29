@@ -22,23 +22,6 @@
  auto-save-interval 200 ; number of keystrokes between auto-saves (default: 300)
  )
 
-;; automatically refresh dired buffer on changes
-(add-hook 'dired-mode-hook 'auto-revert-mode)
-
-;; if it is not Windows, use the following listing switches
-(when (not (eq system-type 'windows-nt))
-  (setq dired-listing-switches "-lha --group-directories-first"))
-
-(use-package wdired
-  :init
-  (setq
-   wdired-allow-to-change-permissions t   ; allow to edit permission bits
-   wdired-allow-to-redirect-links t       ; allow to edit symlinks
-   )
-  :config
-  (require 'wdired)
-  )
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; GROUP: Files -> Recentf            ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -51,17 +34,7 @@
   :config
   (require 'recentf-ext))
 
-(use-package dired+
-  :config
-  (require 'dired+)
-  (add-hook 'dired-mode-hook (lambda()
-                               (dired-hide-details-mode -1)))
-  )
 
-(use-package ztree
-  :config
-  (require 'ztree-diff)
-  (require 'ztree-dir))
 (use-package vlf
   :config
   (require 'vlf)
