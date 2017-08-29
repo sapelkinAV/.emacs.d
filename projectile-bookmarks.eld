@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/code/work/rpg/uspb46/")
+("~/.emacs.d/" "~/code/work/uua10rts/" "~/code/work/rpg/uspb46/")
