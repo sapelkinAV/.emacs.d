@@ -1,7 +1,8 @@
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")
-			 ("elpy" . "https://jorgenschaefer.github.io/packages/")))
+			 ("elpy" . "https://jorgenschaefer.github.io/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")))
 (package-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/use-package/")
@@ -21,6 +22,9 @@
 (require 'programming-config)
 (require 'python-config)
 (require 'golang-config)
+(require 'java-conf)
+(require 'macos-configs)
+(require 'haskell-conf)
 ;;global unsets
 (global-unset-key (kbd "C-z"))
 
@@ -39,7 +43,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dired-k with-editor magit chicken-scheme auto-complete nyan-mode go-mode py-autopep8 elpy linum+ flycheck diff-hl vlf-integrate vlf ztree recentf-ext dired+ dired-x projectile expand-region yasnippet undo-tree clean-aindent-mode smartparens volatile-highlights duplicate-thing workgroups2 spacemacs-theme color-theme company my-aliaces helm-config)))
+    (haskell-mode exec-path-from-shell helm-projectile groovy-mode gradle-mode dired-k with-editor magit chicken-scheme auto-complete nyan-mode go-mode py-autopep8 elpy linum+ flycheck diff-hl vlf-integrate vlf ztree recentf-ext dired+ dired-x projectile expand-region yasnippet undo-tree clean-aindent-mode smartparens volatile-highlights duplicate-thing workgroups2 spacemacs-theme color-theme company my-aliaces helm-config)))
  '(scheme-program-name "scheme"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

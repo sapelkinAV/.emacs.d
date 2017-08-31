@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/code/work/uua10rts/" "~/code/work/rpg/uspb46/")
+("~/.emacs.d/" "~/code/work/rpg/uspb46/" "~/code/work/ws/zhenyapizdec/eq.customer/AlfaCS_EQ_WSCustomerAccountsStatement25/" "~/code/work/ws/zhenyapizdec/eq.customer/" "~/code/work/ws/AlfaCS_EQ_WSCustomerAccountsStatement25/" "~/code/haskell/hello-haskell/" "~/code/work/uua10rts/")

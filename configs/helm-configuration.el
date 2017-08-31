@@ -32,5 +32,9 @@
   (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
   )
 
+(use-package helm-projectile
+  :config
+  (helm-projectile-on))
+
 
 (provide 'helm-configuration)

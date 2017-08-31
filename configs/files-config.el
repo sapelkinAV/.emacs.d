@@ -49,3 +49,6 @@
   :bind
   (:map dired-mode-map
 	("K" . dired-k)))
+
+(modify-coding-system-alist 'file "\\.RPGLE\\'" 'windows-1251)
+(modify-coding-system-alist 'file "\\.CLLE\\'" 'windows-1251)
