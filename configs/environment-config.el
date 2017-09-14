@@ -48,22 +48,9 @@
 (use-package exec-path-from-shell
   :init
   (exec-path-from-shell-initialize)
-    :config
+  :config
+  (when (memq window-system '(mac ns))
     (exec-path-from-shell-initialize))
 
-(defun source-file-and-get-envs (filename)
-  (let* ((cmd (concat ". " filename "; env"))
-         (env-str (shell-command-to-string cmd))
-         (env-lines (split-string env-str "\n"))
-         (envs (mapcar (lambda (s) (replace-regexp-in-string "=.*$" "" s)) env-lines)))
-    (delete "" envs)))
-
-(exec-path-from-shell-copy-envs (source-file-and-get-envs "~/.bash_profile")))
-
-
-(add-hook 'after-init-hook '(exec-path-from-shell-copy-envs (source-file-and-get-envs "~/.bash_profile"))))
-(add-hook 'eshell-mode-hook '((exec-path-from-shell-copy-envs (source-file-and-get-envs "~/.bash_profile"))
-			      (setq shell-path-env (getenv "PATH"))
-			      ))
 
 (provide 'environment-config)

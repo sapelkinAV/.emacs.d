@@ -51,6 +51,9 @@
 ;; easier window navigation
 (windmove-default-keybindings)
 
-
+(use-package golden-ratio
+  :config
+  (golden-ratio-mode 1)
+  (setq golden-ratio-auto-scale t))
 
 (provide 'convinience-config)

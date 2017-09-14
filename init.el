@@ -43,7 +43,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (haskell-mode exec-path-from-shell helm-projectile groovy-mode gradle-mode dired-k with-editor magit chicken-scheme auto-complete nyan-mode go-mode py-autopep8 elpy linum+ flycheck diff-hl vlf-integrate vlf ztree recentf-ext dired+ dired-x projectile expand-region yasnippet undo-tree clean-aindent-mode smartparens volatile-highlights duplicate-thing workgroups2 spacemacs-theme color-theme company my-aliaces helm-config)))
+    (helm-company golden-ratio haskell-mode exec-path-from-shell helm-projectile groovy-mode gradle-mode dired-k with-editor magit chicken-scheme auto-complete nyan-mode go-mode py-autopep8 elpy linum+ flycheck diff-hl vlf-integrate vlf ztree recentf-ext dired+ dired-x projectile expand-region yasnippet undo-tree clean-aindent-mode smartparens volatile-highlights duplicate-thing workgroups2 spacemacs-theme color-theme company my-aliaces helm-config)))
  '(scheme-program-name "scheme"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
